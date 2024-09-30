@@ -66,7 +66,7 @@ The backend service includes proper error handling, input validation, and docume
 #### 1. Clone the Project Repository:
 ```bash
 git clone <repository-url>
-cd <project-directory>
+cd task-manager
 ```
 
 #### 2. Set Up a MySQL Database:
@@ -131,7 +131,7 @@ React will run on `http://127.0.0.1:5173/` by default.
 ### Create a Task
 
 - **Method**: `POST`
-- **Endpoint**: `/tasks/`
+- **Endpoint**: `/createTask/`
 - **Request Body**:
   ```json
   {
@@ -187,7 +187,7 @@ React will run on `http://127.0.0.1:5173/` by default.
 ### Update a Task
 
 - **Method**: `PUT`
-- **Endpoint**: `/tasks/{task_id}`
+- **Endpoint**: `/updateTasks/{task_id}`
 - **Request Body**:
   ```json
   {
