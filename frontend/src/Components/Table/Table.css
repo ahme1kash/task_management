@@ -1,0 +1,93 @@
+.table-wrapper {
+    width: 80%;
+    height: 50%;
+    font-size: 1.3em;
+}
+
+.table {
+    display: block;
+    overflow: hidden;
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-shadow: 20px 20px 10px #ccc;
+    border-radius: 10px;
+    white-space: nowrap;
+    /* width: 100em; */
+    max-width: 80%;
+    margin: auto;
+
+    table-layout: auto;
+    overflow-x: auto;
+}
+
+.table thead {
+    background-color: #eedfdf;
+    color: #100c4b;
+    font-weight: 600;
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+}
+
+
+
+.table td {
+    border-top: 0.5px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table tbody tr:hover {
+    background-color: #ededed;
+    margin-bottom: 8em;
+}
+
+
+
+.expand {
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.delete-btn {
+    color: #e10d05;
+}
+
+/* .app-heading-div {
+    font-size: larger;
+    position: relative;
+
+} */
+
+.heading {
+    position: absolute;
+    top: 0%;
+    left: 42%;
+    font-size: 2em;
+    padding: 2em 0 2em 0;
+    margin: auto
+}
+
+.btn {
+    position: fixed;
+    margin-top: 2em;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #636363;
+    font-size: large;
+}
+
+.edit-btn,
+.delete-btn {
+    cursor: pointer;
+}
