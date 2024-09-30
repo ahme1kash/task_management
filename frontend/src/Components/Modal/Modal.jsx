@@ -5,7 +5,6 @@ import toast from "react-hot-toast";
 
 const Modal = ({ closeModal, fetchData, defaultValue }) => {
   const initialRow = {
-    task_id: null,
     title: "",
     description: "",
   };
@@ -22,7 +21,7 @@ const Modal = ({ closeModal, fetchData, defaultValue }) => {
   }, [defaultValue]);
 
   const validateForm = () => {
-    if (RowData.task_id && RowData.title && RowData.description) {
+    if (RowData.title && RowData.description) {
       setErrors("");
       return true;
     } else {
@@ -88,16 +87,6 @@ const Modal = ({ closeModal, fetchData, defaultValue }) => {
     >
       <div className="modal">
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="task_id">Task Id</label>
-            <input
-              name="task_id"
-              onChange={handleChange}
-              value={RowData.task_id}
-              type="number"
-              disabled={defaultValue}
-            />
-          </div>
           <div className="form-group">
             <label htmlFor="title">Title</label>
             <input name="title" onChange={handleChange} value={RowData.title} />

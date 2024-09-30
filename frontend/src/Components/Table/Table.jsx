@@ -14,7 +14,6 @@ const Table = ({ rows, deleteRow, editRow }) => {
         <table className="table">
           <thead>
             <tr>
-              <th>Task Id</th>
               <th>Title</th>
               <th className="expand">Description</th>
               <th>Actions</th>
@@ -24,7 +23,6 @@ const Table = ({ rows, deleteRow, editRow }) => {
             {rows.map((row) => {
               return (
                 <tr key={row.task_id}>
-                  <td>{row.task_id}</td>
                   <td>{row.title}</td>
                   <td className="expand">{row.description}</td>
 
