@@ -107,6 +107,8 @@ uvicorn app.main:app --reload
 
 FastAPI will run on `http://127.0.0.1:8000/` by default. You can visit `http://127.0.0.1:8000/docs` to explore the **Swagger UI** for the API.
 
+![Screenshot 2024-09-30 105103](https://github.com/user-attachments/assets/a302c513-e1f9-4190-9c3d-542fcf55ba6d)
+
 ### Testing the APIs
 
 Unit tests are provided to validate the API functionality. To run the tests, make sure you've set up a separate testing database and run the tests using:
@@ -123,6 +125,10 @@ npm run dev
 ```
 
 React will run on `http://127.0.0.1:5173/` by default.
+
+![Screenshot 2024-09-30 090929](https://github.com/user-attachments/assets/f3d159a5-f0d9-491b-8d61-87144d2e7027)
+
+![Screenshot 2024-09-30 090916](https://github.com/user-attachments/assets/1abfa104-6e00-418f-922a-75c85f633221)
 
 ---
 
