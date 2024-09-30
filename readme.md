@@ -8,12 +8,15 @@
   - [Setup and Installation](#setup-and-installation)
   - [Running the API](#running-the-api)
   - [Testing the APIs](#testing-the-apis)
+  - [Running the Client App](#running-the-client-app)
 - [API Endpoints](#api-endpoints)
   - [Create a Task](#create-a-task)
   - [Retrieve a Task by ID](#retrieve-a-task-by-id)
   - [Retrieve All Tasks](#retrieve-all-tasks)
   - [Update a Task](#update-a-task)
   - [Delete a Task](#delete-a-task)
+- [API Testcases](#api-testcases)
+    
 
 ---
 
@@ -50,6 +53,9 @@ The backend service includes proper error handling, input validation, and docume
 5. **Pydantic**: Data validation and settings management using Python type annotations.
 6. **PyTest**: Testing framework used to create unit tests for the application.
 7. **Uvicorn**: ASGI server implementation used for running FastAPI.
+8. **Axios**: Third Party Library for creating HTTP requests.
+9. **React Hot Toast** : Toast Notifications on UI as per the results of the HTTP Actions Performed.
+10. **React-Icons** : React's Icon Library.
 
 ---
 
@@ -87,6 +93,7 @@ DATABASE_URL = "mysql+pymysql://<username>:<password>@localhost:3306/taskapplica
 #### 5. Initialize the Database Tables:
 Run the script to create the necessary tables in the database:
 ```bash
+cd backend
 python create_table.py
 ```
 
@@ -94,6 +101,7 @@ python create_table.py
 
 #### 1. Start the FastAPI Application:
 ```bash
+cd backend
 uvicorn app.main:app --reload
 ```
 
@@ -105,6 +113,16 @@ Unit tests are provided to validate the API functionality. To run the tests, mak
 ```bash
 pytest
 ```
+
+### Running the Client App
+
+#### 1. Start the ReactJS Application:
+```bash
+cd frontend
+npm run dev
+```
+
+React will run on `http://127.0.0.1:5173/` by default.
 
 ---
 
@@ -199,7 +217,7 @@ pytest
 
 ---
 
-## Testing the API
+## API Testcases
 
 To ensure the API functionality, unit tests are implemented in `tests/test_task.py`. These tests check the following functionalities:
 
